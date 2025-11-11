@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 对话 - i love hzl 何卓霖</title>
+    <meta name="description" content="与AI对话 - i love hzl 何卓霖的个人网站AI助手">
+    <meta name="keywords" content="i love hzl, 何卓霖, AI对话, hzl7816">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./fix-paths.js"></script>
+</head>
+<body class="chat-page">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="./index.html" style="text-decoration: none; color: inherit;">何卓霖</a></div>
+            <ul class="nav-menu">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./index.html#about">关于我</a></li>
+                <li><a href="./chat.html" class="active">AI 对话</a></li>
+                <li><a href="./guestbook.html" class="guestbook-link">留言</a></li>
+                <li><a href="./index.html#contact">联系方式</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 对话区 -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>与AI对话</h1>
+            <button class="clear-btn" onclick="clearChat()">清空对话</button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai-message">
+                <div class="message-content">
+                    <p>你好！我是AI助手，很高兴与你聊天。有什么我可以帮助你的吗？</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="chat-input-wrapper">
+                <input 
+                    type="text" 
+                    id="chatInput" 
+                    class="chat-input" 
+                    placeholder="输入消息..." 
+                    onkeypress="handleKeyPress(event)"
+                >
+                <button class="send-btn" onclick="sendMessage()">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./chat.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+# 不要忽略图片和网站文件
+# 只忽略系统文件和临时文件
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.log
+*~
+photo
+*.bak
+
+# 文档文件（可选，如果需要可以取消注释）
+# DEPLOY.md
+# DEPLOY_WITH_DOMAIN.md
+# SEARCH_WITHOUT_DOMAIN.md
+# IPHONE_SEARCH.md
+# DEPLOY_FIX.md
+# QUICK_FIX.md
+# ILOVEHZL_DEPLOY.md
+# DEPLOY_GUIDE.md
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 备份文件
+*.backup
+
+# 微信图片文件（已复制到images文件夹）
+*微信图片*.jpg
+*微信图片*.png
